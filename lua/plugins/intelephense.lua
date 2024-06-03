@@ -10,7 +10,8 @@ return {
             intelephense = {
               filetypes = { "php", "blade" },
               files = {
-                associations = { "*.php", "*.blade.php" }, -- Associating .blade.php files as well
+                associations = { "*.php" }, -- Associating .blade.php files as well
+                -- associations = { "*.php", "*.blade.php" }, -- Associating .blade.php files as well
                 maxSize = 5000000,
               },
             },
