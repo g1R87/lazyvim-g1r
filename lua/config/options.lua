@@ -3,3 +3,4 @@
 -- Add any additional options here
 vim.opt.timeoutlen = 1000
 vim.opt.ttimeoutlen = 0
+vim.g.autoformat = false

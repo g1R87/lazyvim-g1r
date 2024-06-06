@@ -5,11 +5,12 @@ return {
       local nls = require("null-ls")
       return {
         sources = {
-          nls.builtins.diagnostics.phpstan.with({
-            extra_args = {
-              "--memory-limit=2G",
-            },
-          }),
+          -- nls.builtins.diagnostics.phpstan.with({
+          --   extra_args = {
+          --     "--memory-limit=2G",
+          --   },
+          --   method = nls.methods.DIAGNOSTICS_ON_SAVE,
+          -- }),
         },
       }
     end,
