@@ -20,3 +20,5 @@ map("n", "<leader>gd",
       { cwd = Util.get_root(), esc_esc = false })
   end,
   { desc = "LazyDocker (root dir)" })
+
+vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })

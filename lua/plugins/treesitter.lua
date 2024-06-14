@@ -19,7 +19,7 @@ return {
   -- },
   opts = {
     -- ensure_installed = "all",
-    ignore_install = { "wing" },
+    ignore_install = { "wing", "javascript", "php" },
     auto_install = false,
     highlight = {
       enable = true,
