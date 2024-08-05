@@ -23,7 +23,7 @@ return {
       "phpstan",
       -- "pint",
       "prettierd",
-      "pyright",
+      -- "pyright",
       "rustywind",
       "shellcheck",
       "shfmt",
