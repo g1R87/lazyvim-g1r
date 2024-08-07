@@ -25,6 +25,7 @@ return {
       enable = true,
     },
     -- Needed because treesitter highlight turns off autoindent for php files
+    -- Needed because indent enable doesn't work for vue files
     indent = {
       enable = function()
         return vim.bo.filetype ~= "vue"
