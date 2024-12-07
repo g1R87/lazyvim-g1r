@@ -18,7 +18,7 @@ return {
   --   "nvim-treesitter/nvim-treesitter-textobjects",
   -- },
   opts = {
-    ensure_installed = { "vue" },
+    ensure_installed = { "vue", "cpp", "rust", "ron" },
     ignore_install = { "wing", "javascript", "php" },
     auto_install = false,
     highlight = {

@@ -19,6 +19,7 @@ return {
         blade = { "blade-formatter", "rustywind" },
         python = { "black" },
         javascript = { "prettierd" },
+        typescript = { "prettierd" },
         vue = { "prettierd" },
       },
       -- LazyVim will merge the options you set here with builtin formatters.
