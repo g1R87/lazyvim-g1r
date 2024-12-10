@@ -7,11 +7,11 @@ return {
       autoformat = false,
       servers = {
         intelephense = {
-          filetypes = { "php" },
+          filetypes = { "php", "php_only" },
           -- filetypes = { "php", "blade" },
           settings = {
             intelephense = {
-              filetypes = { "php" },
+              filetypes = { "php", "php_only" },
               -- filetypes = { "php", "blade" },
               files = {
                 associations = { "*.php" }, -- Associating .blade.php files as well

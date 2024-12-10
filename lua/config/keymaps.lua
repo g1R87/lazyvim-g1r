@@ -22,9 +22,3 @@ map("n", "<leader>gd", function()
 end, { desc = "LazyDocker (root dir)" })
 
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
-
--- php namespace resolver
-vim.keymap.set("n", "<leader>na", "<cmd>Php classes<cr>", { desc = "GetClasses", silent = true })
-vim.keymap.set("n", "<leader>nc", "<cmd>Php class<cr>", { desc = "GetClass", silent = true })
-vim.keymap.set("n", "<leader>nn", "<cmd>Php namespace<cr>", { desc = "Namespace", silent = true })
-vim.keymap.set("n", "<leader>ns", "<cmd>Php sort<cr>", { desc = "Sort Classes", silent = true })
