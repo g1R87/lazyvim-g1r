@@ -1,0 +1,13 @@
+
+{
+  "fa": {
+    "prefix": "fa",
+    "body": "($q) => { $2 };",
+    "description": "Arrow function"
+  },
+  "faa": {
+    "prefix": "faa",
+    "body": "($1) => $2;",
+    "description": "Arrow function (no curly braces)"
+  }
+}

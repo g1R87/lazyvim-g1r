@@ -1,0 +1,7 @@
+{
+  "faa": {
+    "prefix": "faa",
+    "body": "fn ($1) => $2;",
+    "description": "PHP arrow function"
+  }
+}
