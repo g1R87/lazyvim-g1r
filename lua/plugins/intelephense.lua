@@ -7,15 +7,15 @@ return {
       autoformat = false,
       servers = {
         intelephense = {
-          filetypes = { "php", "php_only", "blade" },
-          -- filetypes = { "php", "blade" },
+          filetypes = { "php", "php_only" },
+          -- filetypes = { "php", "blade", "php_only" },
           settings = {
             intelephense = {
-              filetypes = { "php", "php_only", "blade" },
-              -- filetypes = { "php", "blade" },
+              filetypes = { "php", "php_only" },
+              -- filetypes = { "php", "blade", "php_only" },
               files = {
-                -- associations = { "*.php" }, -- Associating .blade.php files as well
-                associations = { "*.php", "*.blade.php" }, -- Associating .blade.php files as well
+                associations = { "*.php" }, -- Associating .blade.php files as well
+                -- associations = { "*.php", "*.blade.php" }, -- Associating .blade.php files as well
                 maxSize = 5000000,
               },
             },
