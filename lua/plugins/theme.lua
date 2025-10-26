@@ -2,7 +2,7 @@ return {
   {
     "catppuccin",
     opts = {
-      transparent_background = false,
+      transparent_background = true,
     },
   },
   -- Configure LazyVim to load gruvbox
@@ -10,7 +10,6 @@ return {
     "LazyVim/LazyVim",
     opts = {
       colorscheme = "catppuccin-mocha",
-      transparent_background = true,
     },
   },
 }

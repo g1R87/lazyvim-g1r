@@ -2,26 +2,30 @@ local util = require("conform.util")
 return {
   "stevearc/conform.nvim",
   opts = function()
-    ---@class ConformOpts
+    ---@type conform.setupOpts
     local opts = {
       -- LazyVim will use these options when formatting with the conform.nvim formatter
       default_format_opts = {
         timeout_ms = 3000,
         async = false, -- not recommended to change
         quiet = false, -- not recommended to change
+        lsp_format = "fallback", -- not recommended to change
       },
-      ---@type table<string, conform.FormatterUnit[]>
       formatters_by_ft = {
         lua = { "stylua" },
         fish = { "fish_indent" },
         sh = { "shfmt" },
         php = { "pint" },
         blade = { "blade-formatter", "rustywind" },
-        python = { "black" },
+        --python = { "pyright" },
         javascript = { "prettierd" },
+        html = { "prettierd" },
+        jsx = { "prettierd" },
+        JSX = { "prettierd" },
         typescript = { "prettierd" },
         vue = { "prettierd" },
         rust = { "rustfmt" },
+        sql = { "sqlfmt" },
       },
       -- LazyVim will merge the options you set here with builtin formatters.
       -- You can also define any custom formatters here.

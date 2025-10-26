@@ -6,5 +6,6 @@ return {
       auto_trigger = false,
     },
     panel = { enabled = false },
+    filetypes = { ["*"] = false },
   },
 }

@@ -8,11 +8,11 @@ return {
       servers = {
         intelephense = {
           filetypes = { "php", "php_only" },
-          -- filetypes = { "php", "blade", "php_only" },
+          -- filetypes = { "php", "blade", "blade.php"},
           settings = {
             intelephense = {
-              filetypes = { "php", "php_only" },
-              -- filetypes = { "php", "blade", "php_only" },
+              filetypes = { "php", "php_only", "blade" },
+              -- filetypes = { "php", "blade", "blade.php" },
               files = {
                 associations = { "*.php" }, -- Associating .blade.php files as well
                 -- associations = { "*.php", "*.blade.php" }, -- Associating .blade.php files as well
@@ -30,6 +30,15 @@ return {
           },
         },
         rust_analyzer = { enabled = false },
+        -- basedpyright = {
+        --   settings = {
+        --     basedpyright = {
+        --       analysis = {
+        --         typeCheckingMode = "standard",
+        --       },
+        --     },
+        --   },
+        -- },
       },
     },
   },
