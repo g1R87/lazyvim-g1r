@@ -1,5 +1,5 @@
 return {
-    "echasnovski/mini.files",
+    "nvim-mini/mini.files",
     version = "*",
     keys = {
         { "<leader>ntt", "<cmd>lua MiniFiles.open()<CR>", desc = "Open Mini file tree" },

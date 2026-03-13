@@ -21,6 +21,21 @@ return {
             },
           },
         },
+        vtsls = {
+          settings = {
+            typescript = {
+              inlayHints = {
+                enumMemberValues = { enabled = false },
+                functionLikeReturnTypes = { enabled = false },
+                parameterNames = { enabled = "literals" },
+                parameterTypes = { enabled = false },
+                propertyDeclarationTypes = { enabled = false },
+                variableTypes = { enabled = false },
+              },
+            },
+          },
+        },
+
         volar = {
           -- filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" },
           init_options = {
@@ -30,15 +45,22 @@ return {
           },
         },
         rust_analyzer = { enabled = false },
-        -- basedpyright = {
-        --   settings = {
-        --     basedpyright = {
-        --       analysis = {
-        --         typeCheckingMode = "standard",
-        --       },
-        --     },
-        --   },
-        -- },
+        lua_ls = {
+          settings = {
+            Lua = {
+              workspace = {
+                library = vim.api.nvim_get_runtime_file("", true),
+              },
+              diagnostics = {
+                -- Get the language server to recognize the `vim` global
+                globals = {
+                  "vim",
+                  "require",
+                },
+              },
+            },
+          },
+        },
       },
     },
   },

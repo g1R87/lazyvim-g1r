@@ -18,7 +18,7 @@ return {
   --   "nvim-treesitter/nvim-treesitter-textobjects",
   -- },
   opts = {
-    ensure_installed = { "vue", "cpp", "rust", "ron", "sql" },
+    ensure_installed = { "vue", "cpp", "rust", "ron", "ninja", "rst" },
     ignore_install = { "wing", "javascript", "php" },
     auto_install = false,
     -- Needed because treesitter highlight turns off autoindent for php files
@@ -36,7 +36,9 @@ return {
       end,
     },
     indent = {
-      enable = true,
+      enable = function()
+        return vim.bo.filetype ~= "vue"
+      end,
       disable = function(lang, buf)
         local filetype = vim.bo[buf].filetype
         return lang == "blade" or filetype == "blade"

@@ -8,7 +8,7 @@ return {
     --     severity = 3,
     -- },
   display={
-      theme = '',
+      theme = 'classic',
     },
     -- fk this sht
     text = {
