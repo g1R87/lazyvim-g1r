@@ -61,6 +61,15 @@ return {
             },
           },
         },
+        pyright = {
+            capabilities = {
+              workspace = {
+                didChangeWatchedFiles = {
+                  dynamicRegistration = true,
+                },
+              },
+            },
+        },
       },
     },
   },

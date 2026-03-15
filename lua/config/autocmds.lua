@@ -5,6 +5,9 @@
 -- Define an autocmd group for the blade workaround
 local augroup = vim.api.nvim_create_augroup("lsp_blade_workaround", { clear = true })
 
+-- Disable q: (command history window)
+-- vim.keymap.set('n', 'q:', '<nop>')
+
 -- Autocommand to temporarily change 'blade' filetype to 'php' when opening for LSP server activation
 vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
   group = augroup,
